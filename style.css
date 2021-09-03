@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  border-radius: 0;
+}
+
+/* RESET END */
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./bg/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+#root {
+  min-width: 60%;
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.493);
+  padding-bottom: 50px;
+}
+
+#root header {
+  margin: 50px 0;
+}
+
+#root #searchDIV {
+  width: 420px;
+  position: relative;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #006d77;
+  -webkit-box-shadow: 0px 5px 5px #888888;
+          box-shadow: 0px 5px 5px #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root #searchDIV label, #root #searchDIV #searchBar {
+  color: #ffddd2;
+  text-indent: 5px;
+}
+
+#root #searchDIV #searchBar {
+  border-bottom: 3px solid #ffddd2;
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+#root #searchDIV #searchBar::-webkit-input-placeholder {
+  color: #ffddd2;
+  opacity: 0.5;
+}
+
+#root #searchDIV #searchBar:-ms-input-placeholder {
+  color: #ffddd2;
+  opacity: 0.5;
+}
+
+#root #searchDIV #searchBar::-ms-input-placeholder {
+  color: #ffddd2;
+  opacity: 0.5;
+}
+
+#root #searchDIV #searchBar::placeholder {
+  color: #ffddd2;
+  opacity: 0.5;
+}
+
+#root #searchDIV #searchResult {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 0.705);
+  margin-top: 10px;
+}
+
+#root #searchDIV #searchResult li {
+  padding: 10px;
+}
+
+#root #searchDIV #searchResult li:hover {
+  -webkit-text-decoration: 3px underline #006d77;
+          text-decoration: 3px underline #006d77;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
+#root #weatherContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #83c5c0d8;
+  border-radius: 20px;
+  line-height: 30px;
+  -webkit-box-shadow: 0px 5px 5px #888888;
+          box-shadow: 0px 5px 5px #888888;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#root #weatherContainer.active {
+  opacity: 1;
+}
+
+#root #weatherContainer div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#root #weatherContainer div:first-child #icon {
+  margin: auto;
+}
+
+#root #weatherContainer div:first-child #text {
+  text-align: center;
+}
+
+span {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
