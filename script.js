@@ -1,6 +1,6 @@
 // Global
 let elements = {};
-const baseURL = "http://api.weatherapi.com/v1";
+const baseURL = "https://api.weatherapi.com/v1";
 const currentWeatherAPI = "current.json";
 const autocompleteAPI = "search.json";
 const weatherAPIKey = "key=9281cb154626404782685014212106";
